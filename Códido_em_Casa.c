@@ -48,15 +48,15 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize){
         }
 
         
-        int valid = 1;
+        int teste = 1;
         for ( int j = 0; j < 26; j++ ) {
             if ( contadorDeLetrasPlate[j] > letrasDaPalavra[j] ) {
-                valid = 0;
+                teste = 0;
             }
         }
 
         
-        if ( valid && totalDaPalavra >= totalDeLetrasPlate && strlen(words[i]) < tamanhoMinimo ) {
+        if ( teste && totalDaPalavra >= totalDeLetrasPlate && strlen(words[i]) < tamanhoMinimo ) {
             menorPalavra = words[i];
             tamanhoMinimo = strlen(words[i]);
         }
