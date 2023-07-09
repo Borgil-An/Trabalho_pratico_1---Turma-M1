@@ -12,8 +12,8 @@ Os 3 casos já disponibilizados no leetcode além do proprio submit.
 
 1° Caso:
 licensePlate = "aBc 12c".
-words = "abccdef", "caaacab", "cbca", "abcdef", "cbca".
-palavra retornada = "cba".
+words = "abccdef", "caaacab", "cbca", "abcdef", "cba".
+palavra retornada = "cbca".
 
 2° Caso:
 licensePlate = "1s3 PSt".
