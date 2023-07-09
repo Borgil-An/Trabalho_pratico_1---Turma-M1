@@ -26,7 +26,7 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize){
     int letrasDaPalavra[26] = {0};
     int totalDaPalavra = 0;
 
-    // Contar as letras do licensePlate
+    
     for ( int i = 0; licensePlate[i] != '\0'; i++ ) {
         char c = tolower(licensePlate[i]);
         if (isalpha(c)) {
@@ -36,9 +36,8 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize){
         }
     }
     
-    // Verificar as palavras em busca da menor completadora
-    for (int i = 0; i < wordsSize; i++) {
-        // Contar as letras da palavra atual
+   
+    for ( int i = 0; i < wordsSize; i++ ) {
         for ( int j = 0; words[i][j] != '\0'; j++ ) {
             char c = tolower(words[i][j]);
             if (isalpha(c)) {
@@ -48,7 +47,7 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize){
             }
         }
 
-        // Verificar se a palavra é uma completadora válida
+        
         int valid = 1;
         for ( int j = 0; j < 26; j++ ) {
             if ( contadorDeLetrasPlate[j] > letrasDaPalavra[j] ) {
@@ -56,7 +55,7 @@ char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize){
             }
         }
 
-        // Atualizar o resultado se for uma completadora válida e menor
+        
         if ( valid && totalDaPalavra >= totalDeLetrasPlate && strlen(words[i]) < tamanhoMinimo ) {
             menorPalavra = words[i];
             tamanhoMinimo = strlen(words[i]);
