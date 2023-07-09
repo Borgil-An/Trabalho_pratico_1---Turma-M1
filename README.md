@@ -10,6 +10,21 @@ Retorne a palavra completadora mais curta em words. É garantido que exista uma 
 3 casos de sucesso:
 Os 3 casos já disponibilizados no leetcode além do proprio submit.
 
+1° Caso:
+licensePlate = "aBc 12c".
+words = "abccdef", "caaacab", "cbca", "abcdef", "cba".
+palavra retornada = "cba".
+
+2° Caso:
+licensePlate = "1s3 PSt".
+words = "step","steps","stripe","stepple".
+palavra retornada = "steps".
+
+3° Caso: 
+licensePlate = "1s3 456".
+words = "looks","pest","stew","show".
+palavra retornada = pest.
+
 O que funcionou ou não:
 Não funcionou tentar resolver o exercicio somente pela biblioteca string.h, então, foi necessário aprender um pouco sobre o funcionamento da ctype.h para conseguir resolver o mesmo.
 
