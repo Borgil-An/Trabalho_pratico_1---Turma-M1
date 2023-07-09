@@ -17,7 +17,10 @@ int main() {
 
     return 0;
 }
-
+/*
+    shortestCompletingWord
+    Função que retorna a menor palavra que contem os caracteres requesitados
+*/
 char *shortestCompletingWord(char *licensePlate, char **words, int wordsSize){
     int contadorDeLetrasPlate[26] = {0};
     int totalDeLetrasPlate = 0;
