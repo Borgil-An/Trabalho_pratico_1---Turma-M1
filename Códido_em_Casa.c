@@ -12,7 +12,7 @@ int main() {
 
     char *menorPalavra = shortestCompletingWord( licensePlate, words, wordsSize );
     if ( menorPalavra != NULL ) {
-        printf("Shortest completing word: %s\n", menorPalavra);
+        printf("Menor palavra com todas letras: %s\n", menorPalavra);
     }
 
     return 0;
